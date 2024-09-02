@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="page1">
+        <div id="left">
+             <div id="left1">
+                <h1>How does
+                    <br> it <span>Work ?</span></h1>
+                </div>
+                <hr>
+             <div id="left2">
+                <p>We make it possible in a quick and easy 
+                    <br>few steps process, takes max 5 mins</p>
+             </div>
+        </div>
+        <div id="right">
+            <div id="img">
+    <div class="wireframe">
+        <div class="phone-frame">
+            <div class="screen">
+                <!-- Header Section -->
+                <div class="header">
+                    <button class="back-btn">&#11013;</button>
+                    <h2>Search results</h2>
+                    <button class="filter-btn">&#9881;</button>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="search-bar">
+                    <input type="text" placeholder="Gurgaon" id="search-input">
+                    <button id="search-icon">&#128269;</button>
+                </div>
+
+                <!-- Property List -->
+                <div class="property-list" id="property-list">
+                    <div class="property-item" data-location="Gurgaon" data-name="Sky Dandelions Apartment" onclick="redirectToProperty('sky-dandelions')">
+                        <img src="property1.jpg" alt="Sky Dandelions Apartment">
+                        <div class="property-info">
+                            <h3>Sky Dandelions Apartment</h3>
+                            <p>Sector 28, Gurgaon<br>₹ 22,000/month</p>
+                        </div>
+                        <button class="property-favorite">&#9829;</button>
+                    </div>
+                    <div class="property-item" data-location="Gurgaon" data-name="Wings Tower" onclick="redirectToProperty('wings-tower')">
+                        <img src="property2.jpg" alt="Wings Tower">
+                        <div class="property-info">
+                            <h3>Wings Tower</h3>
+                            <p>Sector 27, Gurgaon<br>₹ 17,000/month</p>
+                        </div>
+                        <button class="property-favorite">&#128269;</button>
+                    </div>
+                    <div class="property-item" data-location="Gurgaon" data-name="Wayside Modern House" onclick="redirectToProperty('wayside-modern')">
+                        <img src="property3.jpg" alt="Wayside Modern House">
+                        <div class="property-info">
+                            <h3>Wayside Modern House</h3>
+                            <p>MG Road, Gurgaon<br>₹ 18,000/month</p>
+                        </div>
+                        <button class="property-favorite">&#9829;</button>
+                    </div>
+                </div>
+
+                <!-- Nav Bar -->
+                <div class="nav-bar">
+                    <button>&#8962;</button>
+                    <button>&#128269;</button>
+                    <button>&#9829;</button>
+                    <button>&#128100;</button>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div id="page2">
+      <div id="leftp2">
+        <div id="leftp21">
+            <h1>Step 1</h1>
+            </div>
+            <hr>
+         <div id="leftp22">
+            <p>• Tenant selects the property 
+                <br>• Tenant selects flexible rent tenure & corresponding amount</p>
+         </div>
+      </div>
+        <div id="rightp2">
+            <div class="wireframe2">
+                <div class="phone-frame">
+                    <div class="screen">
+                        <!-- Header Section -->
+                        <div class="header">
+                            <button class="back-btn">&#11013;</button>
+                            <h2>Transaction review</h2>
+                        </div>
+            
+                        <!-- Property Summary -->
+                        <div class="property-summary">
+                            <img id="property-image" src="property1.jpg" alt="Sky Dandelions Apartment">
+                            <div class="property-details">
+                                <h3 id="property-name">Sky Dandelions Apartment</h3>
+                                <p id="property-location">Sector 28, Gurgaon</p>
+                                <p id="property-price">₹ 22,020</p>
+                            </div>
+                        </div>
+            
+                        <!-- Select Period -->
+                        <div class="select-period">
+                            <h4>Select Period</h4>
+                            <div class="period-options">
+                                <button class="period-btn" onclick="updatePeriod('3 months')">3 months</button>
+                                <button class="period-btn active" onclick="updatePeriod('6 months')">6 months</button>
+                                <button class="period-btn" onclick="updatePeriod('9 months')">9 months</button>
+                            </div>
+                        </div>
+            
+                        <!-- Payment Detail -->
+                        <div class="payment-details">
+                            <h4>Payment Detail</h4>
+                            <p>Period time: <span id="period-time">6 months</span></p>
+                            <p>Monthly payment: <span id="monthly-payment">₹ 22,020</span></p>
+                            <p>Security deposit: <span id="security-deposit">₹ 0</span></p>
+                            <p>Total: <span id="total-payment">₹ 132,120</span></p>
+                        </div>
+            
+                        <!-- Pay Button -->
+                        <button class="pay-btn" onclick="payWithCircle()">Pay with Circle</button>
+                    </div>
+                </div>
+            </div>
+            
+
+
+        </div>  
+    </div>
+
+     <div id="page3">
+          <div id="leftp3">
+             <div id="leftp31">
+                <h1>Step 2</h1>
+             </div>
+             <div id="leftp32">
+                <p> Tenant selects Pay with Circle enabling:
+                    <br>• Zero security deposit move-in
+                    <br>• Reduced rent offer
+                    <br>• 3 months salary cover</p>
+             </div>
+          </div>
+          <div id="rightp3">
+            <div class="wireframe3">
+                <div class="phone-frame">
+                    <div class="screen">
+                        <!-- Header Section -->
+                        <div class="header">
+                            <h2>Circle App</h2>
+                            <p>Rent at <span class="highlight">Zero</span> security deposit</p>
+                        </div>
+            
+                        <!-- Steps Overview -->
+                        <div class="steps-overview">
+                            <h4>Set-up No Cost EMI in 3 steps</h4>
+                            <div class="step">
+                                <div class="step-number active">1</div>
+                                <div class="step-details">
+                                    <h5>Eligibility check</h5>
+                                    <p>Basic Details</p>
+                                    <p>Work Details</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <div class="step-details">
+                                    <h5>Setup AutoPay</h5>
+                                    <p>Bank Details</p>
+                                    <p>Identity Verification</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <div class="step-details">
+                                    <h5>Move-In</h5>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Checkbox and Buttons -->
+                        <div class="terms">
+                            <input type="checkbox" id="terms-checkbox">
+                            <label for="terms-checkbox">By clicking this, you approved our <a href="#">terms and conditions</a> and <a href="#">privacy policy</a></label>
+                        </div>
+                        <button class="get-started-btn" onclick="getStarted()">Get Started ></button>
+                        <button class="go-back-btn" onclick="goBack()">Go Back</button>
+                    </div>
+                </div>
+            </div>
+            
+
+          </div>
+    </div>
+
+    <div id="page4">
+        <div id="leftp4">
+            <div id="leftp41">
+                <h1>Step 3</h1>
+            </div>
+            <div id="leftp42">
+                <p>Tenant gets approved to move-in:
+                    <br>• Gets Zero-security deposit approval
+                    <br>• Zero cost EMI = Monthly Rent</p>
+            </div>
+        </div>
+    <div id="rightp4">
+        <div class="wireframe4">
+            <div class="phone-frame">
+                <div class="screen">
+                    <!-- Header Section -->
+                    <div class="header">
+                        <button class="back-btn">&#11013;</button>
+                    </div>
+        
+                    <!-- Progress Bar -->
+                    <div class="progress-bar">
+                        <button class="progress-step completed">Setup Autopay</button>
+                        <button class="progress-step completed">Setup Autopay</button>
+                        <button class="progress-step active">KYC & move-in</button>
+                    </div>
+        
+                    <!-- Main Content -->
+                    <div class="main-content">
+                        <h2>One step away <span class="highlight">✨</span></h2>
+                        <p>from your dream home</p>
+                        <div class="icon">
+                            <img src="icon.png" alt="Icon"> <!-- Replace with appropriate icon -->
+                        </div>
+                        <p class="emi-status">Rent converted to Zero-Cost EMI</p>
+                        <div class="details">
+                            <p><strong>Co-living partner:</strong> Rent-OK</p>
+                            <p><strong>Payment Amount:</strong> INR XXXX.00</p>
+                            <p><strong>Monthly rent (Zero-Cost EMI):</strong> 10,000 INR/mo.</p>
+                            <p><strong>Rent cycle (EMI Duration):</strong> 5 Months</p>
+                        </div>
+                        <button class="zero-cost-emi-btn">Zero COST EMI</button>
+                        <p class="agreement-text">
+                            By clicking on next, you acknowledge that you have read <a href="#">View Loan Agreement & KFS</a> agreed to the terms and conditions contained in the loan agreement.
+                        </p>
+                    </div>
+        
+                    <!-- Continue Button -->
+                    <button class="continue-btn" onclick="continueToNextStep()">Continue ></button>
+                </div>
+            </div>
+        </div>
+      </div>  
+    </div>
+
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
